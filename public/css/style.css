@@ -1,0 +1,70 @@
+@font-face {
+  font-family: OpenSans-Light;
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+body {
+  background-color: #f1f1f1;
+  font: 1em 'OpenSans-Regular', sans-serif;
+  color: #3e3e3e;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #2494A2;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  font-family: 'OpenSans-Light', sans-serif;
+  color: #e3e3e3;
+  margin: 0;
+  font-size: 2em;
+}
+table {
+  background-color: #fff;
+  margin: 60px auto;
+  border-collapse: collapse;
+  border-top: 2px solid #928292;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+td,
+th {
+  padding: 6px 16px;
+}
+tr {
+  border-bottom: 1px solid #928292;
+}
+td:last-child {
+  text-align: center;
+}
+th {
+  font-style: normal;
+  text-align: center;
+}
+td a {
+  font-style: normal;
+  text-decoration: none;
+}
+select[name='status'] option {
+  text-transform: uppercase;
+}
+td[contenteditable=true]:hover,
+.updating,
+.lastRow {
+  background-color: #ececec;
+}
+tr:last-child td:first-child:hover,
+tr:last-child td:last-child:hover {
+  background-color: #fff;
+}
+img {
+  padding: 2px;
+  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1);
+}
