@@ -19,7 +19,7 @@ MongoClient.connect('mongodb://localhost:27017/crudapp', function(err, db){
     app.use(bodyParser.urlencoded({ extended: true }));
 
     app.get('/', function (req, res) {
-        res.render('index');
+        res.render('index.jade');
     });
 
     app.get('/getaccident', function(req, res){
