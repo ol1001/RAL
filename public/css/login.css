@@ -37,12 +37,15 @@ button.btn {
   text-transform: uppercase;
   border-color: #EEF7F6;
 }
-button.btn:hover {
+button.btn:hover,
+.inputImg + label:hover {
   background-color: #3B7674;
   color: #EEF7F6;
 }
 .btn,
-.form-group input {
+.form-group input,
+.form-group textarea,
+.form-group select {
   background-color: #fafefc;
 }
 .help-block {
@@ -64,4 +67,26 @@ ul.nav.nav-tabs li a {
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 1px 4px rgba(163, 204, 210, 0.45);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px 2px rgba(163, 204, 210, 0.45);
+}
+.add-user {
+  border: 1px solid #A3CCD2;
+  margin-left: 84px;
+}
+.inputImg {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputImg + label {
+  background-color: #A3CCD2;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 8px 16px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
 }

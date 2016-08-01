@@ -26,6 +26,14 @@ MongoClient.connect('mongodb://localhost:27017/crudapp', function(err, db){
         res.sendfile('./views/login.html');
     });
 
+    app.get('/admin', function (req, res) {
+        res.sendfile('./views/admin.html');
+    });
+
+    app.get('/requests', function (req, res) {
+        res.sendfile('./views/requests.html');
+    });
+
     app.get('/getaccident', function(req, res){
         var query = {};
         dbCollection.find(query).toArray(function(err, docs) {
