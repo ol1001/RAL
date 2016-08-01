@@ -22,6 +22,10 @@ MongoClient.connect('mongodb://localhost:27017/crudapp', function(err, db){
         res.render('index.jade');
     });
 
+    app.get('/login', function (req, res) {
+        res.sendfile('./views/login.html');
+    });
+
     app.get('/getaccident', function(req, res){
         var query = {};
         dbCollection.find(query).toArray(function(err, docs) {
